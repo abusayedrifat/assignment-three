@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="max-w-screen-2xl mx-auto">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- daisy ui links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tailwind design -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        "primary-color": "#FF4240",
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- font-awesome kit -->
+    <script src="https://kit.fontawesome.com/d80873d818.js" crossorigin="anonymous"></script>
+    <!-- general style -->
+    <style></style>
 </head>
-<body>
-    
+
+<body class="mx-auto lg:max-w-[1170px]">
+    <!-- header -->
+    <header>
+        <nav class="py-12 mr-3">
+            <div class="navbar bg-base-100 justify-center items-center">
+                <div class="navbar-start">
+                    <div class="dropdown flex justify-between align-bottom items-baseline">
+                        <div tabindex="0" role="button" class="btn btn-ghost text-4xl pr-3 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg">
+                                <li><a class="text-primary-color" href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="text-2xl lg:text-5xl font-bold text-left">Hockey<span class="text-primary-color">’</span>s</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex justify-end items-center">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li><a class="text-primary-color" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass mr-6 invisible text-2xl lg:visible"></i>
+                    <a class="btn px-4  bg-primary-color text-white  lg:text-lg">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section class="flex flex-col gap-4 mb-24 px-3 mx-auto lg:max-w-[1170px] lg:flex-none lg:relative">
+            <div class="carousel w-full relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/banner.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide5" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide5" class="carousel-item relative w-full">
+                    <img src="Images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-[530px] bg-slate-900 p-4 lg:p-8 rounded-2xl lg:absolute lg:right-14 lg:bottom-8">
+                <h3 class="text-lg font-bold text-white">
+                    Meet all the heroes from the field
+                </h3>
+                <p class="text-gray-400 mt-2 lg:mt-4">
+                    Legends in their own right, have left an indelible mark on the
+                    sport and inspiration for others.
+                </p>
+            </div>
+        </section>
+    </header>
+    <main class="px-3 mx-auto lg:max-w-[1170px]">
+   
+    </main>
 </body>
+
 </html>
