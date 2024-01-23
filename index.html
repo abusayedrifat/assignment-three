@@ -22,6 +22,7 @@
                     colors: {
                         clifford: "#da373d",
                         "primary-color": "#FF4240",
+                        // text-gray-400
                     },
                 },
             },
@@ -30,7 +31,13 @@
     <!-- font-awesome kit -->
     <script src="https://kit.fontawesome.com/d80873d818.js" crossorigin="anonymous"></script>
     <!-- general style -->
-    <style></style>
+    <style>
+
+       button{
+        border: none;
+        outline: none;
+       }
+    </style>
 </head>
 
 <body class="mx-auto lg:max-w-[1170px]">
@@ -59,7 +66,8 @@
                         </div>
                     </div>
                     <div>
-                        <a class="text-2xl lg:text-5xl font-bold text-left">Hockey<span class="text-primary-color">’</span>s</a>
+                        <a class="text-2xl lg:text-5xl font-bold text-left">Hockey<span
+                                class="text-primary-color">’</span>s</a>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex justify-end items-center">
@@ -117,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-[530px] bg-slate-900 p-4 lg:p-8 rounded-2xl lg:absolute lg:right-14 lg:bottom-8">
+            <div class="w-full lg:w-[530px] bg-slate-900 p-4 lg:p-8 rounded-2xl lg:absolute lg:right-7 lg:bottom-4">
                 <h3 class="text-lg font-bold text-white">
                     Meet all the heroes from the field
                 </h3>
@@ -128,8 +136,160 @@
             </div>
         </section>
     </header>
+
+    <!-- main -->
     <main class="px-3 mx-auto lg:max-w-[1170px]">
-   
+
+        <!-- Professional Hockeys Club section -->
+        <section class="mb-12 mx-auto border-y-[1px] border-dashed border-gray-400 py-8">
+            <h2 class="text-center text-4xl font-bold">Professional Hockeys Club</h2>
+            <p class="w-3/5 mx-auto mt-6 text-center text-gray-500">
+                Professional hockey club that competes at the highest level of the sport, showcasing elite talent and a
+                commitment to excellence.
+            </p>
+        </section>
+
+        <!-- radial progress section -->
+        <section class="flex flex-col justify-between gap-8 px-5 mb-24 text-center lg:flex-row lg:flex-1">
+
+            <!-- 1st-radial -->
+            <div>
+
+                <div class="radial-progress text-red-600" style="--value:87; --size:8rem; --thickness:14px;"
+                    role="progressbar">
+                    <h2
+                        class="text-[26px] text-gray-900 font-extrabold border-[23px] border-[#E7E7E8] rounded-full px-[18px] py-[26px]">
+                        87%</h2>
+                </div>
+
+                <div class="mx-auto">
+                    <h4 class="text-xl font-medium mt-6 mb-4">Player Facility</h4>
+                    <p class=" text-gray-400"> The player facility stands as a pinnacle of athletic support. </p>
+                </div>
+            </div>
+            <!-- 2nd-radial -->
+            <div>
+
+                <div class="radial-progress text-green-400" style="--value:92; --size:8rem; --thickness:14px;"
+                    role="progressbar">
+                    <h2
+                        class="text-[26px] text-gray-900 font-extrabold border-[23px] border-[#E7E7E8] rounded-full px-[18px] py-[26px]">
+                        95%</h2>
+                </div>
+
+                <div class="mx-auto">
+                    <h4 class="text-xl font-medium mt-6 mb-4">Experienced Coach</h4>
+                    <p class=" text-gray-400">Guiding the team an experienced and strategic leader </p>
+                </div>
+            </div>
+
+            <!-- 3rd-radial -->
+            <div>
+
+                <div class="radial-progress text-amber-400" style="--value:90; --size:8rem; --thickness:14px;"
+                    role="progressbar">
+                    <h2
+                        class="text-[26px] text-gray-900 font-extrabold border-[23px] border-[#E7E7E8] rounded-full px-[18px] py-[26px]">
+                        90%</h2>
+                </div>
+
+                <div class="mx-auto">
+                    <h4 class="text-xl font-medium mt-6 mb-4">Senior Player</h4>
+                    <p class=" text-gray-400">Proudly boasts the presence of seasoned veterans.</p>
+                </div>
+            </div>
+            <!-- 4th-radial -->
+            <div>
+
+                <div class="radial-progress text-sky-400" style="--value:80; --size:8rem; --thickness:14px;"
+                    role="progressbar">
+                    <h2
+                        class="text-[26px] text-gray-900 font-extrabold border-[23px] border-[#E7E7E8] rounded-full px-[18px] py-[26px]">
+                        80%</h2>
+                </div>
+
+                <div class="mx-auto">
+                    <h4 class="text-xl font-medium mt-6 mb-4">Training Ground </h4>
+                    <p class=" text-gray-400">Cutting-edge training ground, players undergo rigorous.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Sections -->
+
+        <section class="mx-auto mb-14 py-8 border-y-[1px] border-dashed border-gray-400">
+            <h2 class="text-center text-4xl font-bold">Program Sections</h2>
+            <p class=" mx-auto mt-6 px-2 text-center text-gray-500">
+                Dynamic initiative embodying the club's commitment to community impact and strategic objectives. This
+                section, be it focused on community outreach, youth development.
+            </p>
+        </section>
+
+         <!-- Program content Sections -->
+
+ <section class="flex flex-col gap-5 mb-24">
+    
+    <div class="flex flex-col gap-5 w-full lg:flex-row">
+        <div class="w-full lg:w-1/2 relative">
+            <div class="rlative">
+                <div class="bg-[#13131880] opacity-50 w-full z-0 h-full rounded-2xl absolute"></div>
+            <img class="w-full h-full -z-10 bg-cover relative" src="Images/2.png" alt="">  
+            </div> 
+             <div class="mx-4 absolute bottom-2 lg:bottom-10 lg:mx-10 text-white">
+                <h3 class="text-3xl  font-bold">Junior Program</h3>
+                <p class="text-sm mt-1 mb-4 lg:mt-2 lg:mb-4 lg:text-lg">
+                    dynamic junior development initiative designed to cultivate the future stars of hockey. With a focus on fundamental skill development.
+                </p>
+                <button class="btn bg-primary-color text-white">Register Now!</button>
+            </div>
+        </div>
+    
+        <div class="w-full lg:w-1/2 relative">
+            <div class="rlative">
+                <div class="bg-[#13131880] opacity-50 w-full z-0 h-full rounded-2xl absolute"></div>
+            <img class="w-full h-full -z-10 bg-cover relative" src="Images/3.png" alt="">  
+            </div> 
+             <div class="mx-4 absolute bottom-2 lg:bottom-10 lg:mx-10 text-white">
+                <h3 class="text-3xl  font-bold">Junior Program</h3>
+                <p class="text-sm mt-1 mb-4 lg:mt-2 lg:mb-4 lg:text-lg">
+                    dynamic junior development initiative designed to cultivate the future stars of hockey. With a focus on fundamental skill development.
+                </p>
+                <button class="btn bg-primary-color text-white">Register Now!</button>
+            </div>
+        </div>
+    </div>
+<!-- 3rd image -->
+
+    <div class="w-full relative">
+        <div class="rlative">
+            <div class="bg-[#13131880] opacity-50 w-full z-0 h-full rounded-2xl absolute"></div>
+        <img class="w-full h-full -z-10 bg-cover relative" src="Images/4.png" alt="">  
+        </div> 
+         <div class="lg:w-[540px] text-white  mx-4  absolute bottom-2 lg:bottom-10 lg:mx-10">
+            <h3 class="text-3xl  font-bold">Junior Program</h3>
+            <p class="text-sm mt-1 mb-4 lg:mt-2 lg:mb-4 lg:text-lg">
+                dynamic junior development initiative designed to cultivate the future stars of hockey. With a focus on fundamental skill development.
+            </p>
+            <button class="btn bg-primary-color text-white">Register Now!</button>
+        </div>
+    </div>
+    
+ </section>
+ <!-- <section>
+    <div class="w-full relative">
+        <div class="rlative">
+            <div class="bg-[#13131880] opacity-50 w-full z-0 h-full rounded-2xl absolute"></div>
+        <img class="w-full h-full -z-10 bg-cover relative" src="Images/3.png" alt="">  
+        </div> 
+         <div class="mx-4 absolute bottom-2 lg:bottom-10 lg:mx-10 text-white">
+            <h3 class="text-3xl  font-bold">Junior Program</h3>
+            <p class="text-sm mt-1 mb-4 lg:mt-2 lg:mb-4 lg:text-lg">
+                dynamic junior development initiative designed to cultivate the future stars of hockey. With a focus on fundamental skill development.
+            </p>
+            <button class="btn bg-primary-color text-white">Register Now!</button>
+        </div>
+    </div>
+ </section> -->
     </main>
 </body>
 
